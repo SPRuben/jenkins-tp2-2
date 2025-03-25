@@ -10,7 +10,7 @@ pipeline {
                         sh 'exit 1' // Simulation d'une erreur
                     } catch (Exception e) {
                         echo "Erreur détectée dans le build !"
-                        currentBuild.result = 'SUCCESS'
+                        //currentBuild.result = 'FAILURE'
                     }
                 }
             }
